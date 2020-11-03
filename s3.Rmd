@@ -1,11 +1,13 @@
 ---
-title: "Utiliser le système de stockage"
-output: 
+title: SSP Cloud avec R
+subtitle: Utiliser le système de stockage
+lang: fr
+output:
   html_document:
     df_print: paged
 ---
 
-## Lister tous les buckets
+#### Lister tous les buckets
 
 Ceci est d'un intérêt limité sauf pour retrouver le nom de son bucket
 
@@ -14,8 +16,7 @@ library(aws.s3)
 bucketlist(region = "")
 ```
 
-
-## Lister les objets de son bucket
+#### Lister les objets de son bucket
 
 Modifiez votre bucket ici :
 
@@ -30,23 +31,46 @@ objects <- get_bucket(bucket, region = "")
 objects
 ```
 
-## Télécharger un fichier dans son espace de travail
+#### Télécharger un fichier dans son espace de travail
 
-```{r}
+```{r, eval=FALSE}
 save_object(get_objectkey(objects[[2]]), bucket, region = "")
 ```
 
-## Déposer/Uploader un fichier sur son bucket
+#### Déposer/Uploader un fichier sur son bucket
 
 ```{r, eval=FALSE}
 file <- "s3.html"
 put_object(file, file.path(basename(getwd()), file), bucket, region = "")
 ```
 
+### Avec paws
+
+Le package **paws** est de plus bas niveau. La configuration est :
+
+```{r}
+svc <- paws::s3(config = list(
+  credentials = list(
+    creds = list(
+      access_key_id = Sys.getenv("AWS_ACCESS_KEY_ID"),
+      secret_access_key = Sys.getenv("AWS_SECRET_ACCESS_KEY"),
+      session_token = Sys.getenv("AWS_SESSION_TOKEN")
+    ),
+    profile = "f7sggu"
+  ),
+  endpoint = paste0("https://", Sys.getenv("AWS_S3_ENDPOINT")),
+  region = Sys.getenv("AWS_DEFAULT_REGION")
+))
+```
+
+```{r}
+svc$list_objects_v2("f7sggu", Prefix = "sspcloud-demo")
+```
+
 ---
 
+### Infos
+
 ```{r, session}
-Sys.time()
 git2r::repository()
-sessionInfo()
 ```
