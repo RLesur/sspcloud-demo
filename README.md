@@ -13,7 +13,7 @@ An R demo project for [datalab.sspcloud.fr](https://datalab.sspcloud.fr).
   ```
 
 - install the dependencies declared in the `DESCRIPTION` file  
-  *you should declare your dependencies in the `DESCRIPTION` file*
+  *you should declare your dependencies in the `DESCRIPTION` file!*
   ```r
   remotes::install_deps()
   ```
