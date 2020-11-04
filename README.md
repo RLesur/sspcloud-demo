@@ -28,7 +28,7 @@ Uploader un fichier
 aws.s3::put_object(file, object, bucket, region = "")
 ```
 
-### Exemple : uploader un rapport R Markdown
+### Exemple #1 : uploader un rapport R Markdown
 
 Le ficher `s3.Rmd` présente les commandes de base pour gérer ses fichiers cloud
 
@@ -45,7 +45,7 @@ rmarkdown::render("s3.Rmd", params = list(bucket = bucket))
 source("_upload_HTML.R")
 ```
 
-### Travailler avec des données stockées sur MinIO
+### Exemple #2 : Travailler avec des données stockées sur MinIO
 
 Un exemple minimal est présent dans le fichier `datasaurus.R` :
 
