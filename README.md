@@ -12,6 +12,12 @@ git2r::clone("https://github.com/RLesur/sspcloud-demo.git", "sspcloud-demo")
 rstudioapi::openProject("sspcloud-demo")
 ```
 
+- install the dependencies declared in the `DESCRIPTION` file  
+  **you should declare your dependencies in the `DESCRIPTION` file**
+  ```r
+  remotes::install_deps()
+  ```
+
 ## Utilisation du système de stockage
 
 ### Cheatsheet
