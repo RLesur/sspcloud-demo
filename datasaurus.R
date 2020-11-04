@@ -21,7 +21,4 @@ file <- "out/datasaurus.png"
 ggsave(file)
 
 # Export S3 ---------------------------------------------------------------
-if (!isTRUE(exists("bucket"))) {
-  bucket <- "f7sggu"
-}
-aws.s3::put_object(file, file.path(basename(getwd()), file), bucket, region = "")
+source("_upload.R")

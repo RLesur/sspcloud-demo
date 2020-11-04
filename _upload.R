@@ -7,6 +7,6 @@ if (!isTRUE(exists("bucket"))) {
 files <- list.files("out", full.names = TRUE)
 
 for(f in files) {
-  cat("Uploading", f, "file...\n")
-  aws.s3::put_object(f, file.path(basename(getwd()), basename(f)), bucket, region = "", show_progress = TRUE)
+  cat("Uploading file", paste0("'", f, "'"), "\n")
+  aws.s3::put_object(f, file.path(basename(getwd()), f), bucket, region = "", show_progress = TRUE)
 }

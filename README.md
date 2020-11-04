@@ -42,7 +42,7 @@ rmarkdown::render("s3.Rmd", params = list(bucket = bucket), output_dir = "out")
 
 - uploader le rapport
 ```r
-source("_upload_HTML.R")
+source("_upload.R")
 ```
 
 ### Exemple #2 : Travailler avec des données stockées sur MinIO
@@ -53,3 +53,8 @@ Un exemple minimal est présent dans le fichier `datasaurus.R` :
 
 - on construit un graphique ggplot qu'on sauvegarde en `png` et qu'on uploade sur MinIO
 
+Pour exécuter ce pipeline :
+
+```r
+source("datasaurus.R")
+```
