@@ -28,7 +28,7 @@ aws.s3::put_object(file, object, bucket, region = "")
 
 ### Exemple : uploader un rapport R Markdown
 
-- le ficher `s3.Rmd` présente les commandes de base pour gérer ses fichiers cloud
+Le ficher `s3.Rmd` présente les commandes de base pour gérer ses fichiers cloud
 
 - générer le rapport
 ```r
@@ -43,4 +43,11 @@ rmarkdown::render("s3.Rmd", params = list(bucket = bucket))
 source("_upload_HTML.R")
 ```
 
-### 
+### Travailler avec des données stockées sur MinIO
+
+Un exemple minimal est présent dans le fichier `datasaurus.R` :
+
+- les données du _datasaurus_ sont publiquement disponibles à cettre adresse <https://minio.lab.sspcloud.fr/f7sggu/sspcloud-demo/data/datasaurus.csv>
+
+- on construit un graphique ggplot qu'on sauvegarde en `png` et qu'on uploade sur MinIO
+
