@@ -37,7 +37,7 @@ Le ficher `s3.Rmd` présente les commandes de base pour gérer ses fichiers clou
 # renseigner le bucket
 bucket <- "f7sggu"
 
-rmarkdown::render("s3.Rmd", params = list(bucket = bucket))
+rmarkdown::render("s3.Rmd", params = list(bucket = bucket), output_dir = "out")
 ```
 
 - uploader le rapport
