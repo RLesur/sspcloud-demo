@@ -2,10 +2,17 @@ Package: sspcloud.demo
 Title: Utiliser R avec le SSP Cloud
 Version: 0.0.0.9000
 Authors@R: person("Romain", "Lesur", email = "romain.lesur@insee.fr")
-Description: Une petite démo.
+Description: Deux exemples pour travailler avec le système de stockage du datalab.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.0
 Type: Book
+Imports:
+  aws.s3,
+  ggplot2,
+  git2r,
+  magrittr,
+  paws,
+  rmarkdown
