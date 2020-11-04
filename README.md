@@ -2,6 +2,8 @@
 
 An R demo project for [datalab.sspcloud.fr](https://datalab.sspcloud.fr).
 
+## Environment setup
+
 - create an RStudio service [![](https://img.shields.io/badge/SSPCloud-RStudio-%2376abdd)](https://datalab.sspcloud.fr/my-lab/catalogue/inseefrlab-datascience/rstudio/deploiement)
 
 - in RStudio, clone and open this project
