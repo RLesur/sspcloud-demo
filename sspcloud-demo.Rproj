@@ -13,4 +13,4 @@ RnwWeave: Sweave
 LaTeX: pdfLaTeX
 
 BuildType: Custom
-CustomScriptPath: _upload.R
+CustomScriptPath: _upload_HTML.R

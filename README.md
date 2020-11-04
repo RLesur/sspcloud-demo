@@ -28,14 +28,19 @@ aws.s3::put_object(file, object, bucket, region = "")
 
 ### Exemple : uploader un rapport R Markdown
 
-- ouvrir le ficher `s3.Rmd` : il présente les commandes de base pour gérer ses fichiers cloud.
+- le ficher `s3.Rmd` présente les commandes de base pour gérer ses fichiers cloud
 
 - générer le rapport
 ```r
-rmarkdown::render("s3.Rmd")
+# renseigner le bucket
+bucket <- "f7sggu"
+
+rmarkdown::render("s3.Rmd", params = list(bucket = bucket))
 ```
 
 - uploader le rapport
 ```r
-
+source("_upload_HTML.R")
 ```
+
+### 

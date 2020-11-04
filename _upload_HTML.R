@@ -1,7 +1,9 @@
 #!/usr/bin/env Rscript
 
 # Ceci est un exemple pour uploader tous les fichiers HTML présents dans le répertoire courant
-bucket <- "f7sggu"
+if (!isTRUE(exists("bucket"))) {
+  bucket <- "f7sggu"
+}
 files <- list.files(pattern = "\\.htm[l]$")
 
 for(f in files) {

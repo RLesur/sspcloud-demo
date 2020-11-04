@@ -5,6 +5,8 @@ lang: fr
 output:
   html_document:
     df_print: paged
+params:
+  bucket: f7sggu
 ---
 
 #### Lister tous les buckets
@@ -12,18 +14,13 @@ output:
 Ceci est d'un intérêt limité sauf pour retrouver le nom de son bucket
 
 ```{r bucketlist}
+bucket <- params$bucket
+
 library(aws.s3)
 bucketlist(region = "")
 ```
 
 #### Lister les objets de son bucket
-
-Modifiez votre bucket ici :
-
-```{r assign-bucketname}
-bucket <- "f7sggu"
-```
-
 
 ```{r list-objects-df}
 objects <- get_bucket(bucket, region = "")
