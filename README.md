@@ -6,11 +6,11 @@ An R demo project for [datalab.sspcloud.fr](https://datalab.sspcloud.fr).
 
 - create an RStudio service [![](https://img.shields.io/badge/SSPCloud-RStudio-%2376abdd)](https://datalab.sspcloud.fr/my-lab/catalogue/inseefrlab-datascience/rstudio/deploiement)
 
-- in RStudio, clone and open this project
-```r
-git2r::clone("https://github.com/RLesur/sspcloud-demo.git", "sspcloud-demo")
-rstudioapi::openProject("sspcloud-demo")
-```
+- in RStudio, clone and open this project  
+  ```r
+  git2r::clone("https://github.com/RLesur/sspcloud-demo.git", "sspcloud-demo")
+  rstudioapi::openProject("sspcloud-demo")
+  ```
 
 - install the dependencies declared in the `DESCRIPTION` file  
   **you should declare your dependencies in the `DESCRIPTION` file**
@@ -38,18 +38,18 @@ aws.s3::put_object(file, object, bucket, region = "")
 
 Le ficher `s3.Rmd` présente les commandes de base pour gérer ses fichiers cloud
 
-- générer le rapport
-```r
-# renseigner le bucket
-bucket <- "f7sggu"
-
-rmarkdown::render("s3.Rmd", params = list(bucket = bucket), output_dir = "out")
-```
+- générer le rapport  
+  ```r
+  # renseigner le bucket
+  bucket <- "f7sggu"
+  
+  rmarkdown::render("s3.Rmd", params = list(bucket = bucket), output_dir = "out")
+  ```
 
 - uploader le rapport
-```r
-source("_upload.R")
-```
+  ```r
+  source("_upload.R")
+  ```
 
 ### Exemple #2 : Travailler avec des données stockées sur MinIO
 
