@@ -1,0 +1,11 @@
+Package: sspcloud.demo
+Title: Utiliser R avec le SSP Cloud
+Version: 0.0.0.9000
+Authors@R: person("Romain", "Lesur", email = "romain.lesur@insee.fr")
+Description: Une petite démo.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.0
+Type: Book
