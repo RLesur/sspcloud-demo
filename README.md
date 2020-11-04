@@ -13,7 +13,7 @@ An R demo project for [datalab.sspcloud.fr](https://datalab.sspcloud.fr).
   ```
 
 - install the dependencies declared in the `DESCRIPTION` file  
-  **you should declare your dependencies in the `DESCRIPTION` file**
+  *you should declare your dependencies in the `DESCRIPTION` file*
   ```r
   remotes::install_deps()
   ```
@@ -36,7 +36,7 @@ aws.s3::put_object(file, object, bucket, region = "")
 
 ### Exemple #1 : uploader un rapport R Markdown
 
-Le ficher `s3.Rmd` présente les commandes de base pour gérer ses fichiers cloud
+Le fichier `s3.Rmd` présente les commandes de base pour gérer ses fichiers cloud
 
 - générer le rapport  
   ```r
