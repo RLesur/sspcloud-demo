@@ -6,6 +6,10 @@ An R demo project for [datalab.sspcloud.fr](https://datalab.sspcloud.fr).
 
 - create an RStudio service [![](https://img.shields.io/badge/SSPCloud-RStudio-%2376abdd)](https://datalab.sspcloud.fr/my-lab/catalogue/inseefrlab-datascience/rstudio/deploiement)
 
+- log in with the following credentials:
+  * user: `rstudio`
+  * password: your services password
+
 - in RStudio, clone and open this project  
   ```r
   git2r::clone("https://github.com/RLesur/sspcloud-demo.git", "sspcloud-demo")
@@ -40,7 +44,7 @@ Le fichier `s3.Rmd` présente les commandes de base pour gérer ses fichiers clo
 
 - générer le rapport  
   ```r
-  # renseigner le bucket
+  # Modifier le bucket ci-dessous (renseignez votre bucket)
   bucket <- "f7sggu"
   
   rmarkdown::render("s3.Rmd", params = list(bucket = bucket), output_dir = "out")
