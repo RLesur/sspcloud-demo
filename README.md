@@ -8,7 +8,7 @@ An R demo project for [datalab.sspcloud.fr](https://datalab.sspcloud.fr).
 
 - log in with the following credentials:
   * user: `rstudio`
-  * password: your services password
+  * password: your services password (you can find it on this page <https://datalab.sspcloud.fr/mon-compte>)
 
 - in RStudio, clone and open this project  
   ```r
