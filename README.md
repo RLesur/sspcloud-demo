@@ -53,7 +53,7 @@ Le fichier `s3.Rmd` présente les commandes de base pour gérer ses fichiers clo
 
 ### Exemple #2 : Travailler avec des données stockées sur MinIO
 
-Un exemple minimal est présent dans le fichier `datasaurus.R` :
+Un exemple minimal est présent dans le fichier [datasaurus.R](./datasaurus.R) :
 
 - les données du _datasaurus_ sont publiquement disponibles à cettre adresse <https://minio.lab.sspcloud.fr/f7sggu/sspcloud-demo/data/datasaurus.csv>
 
