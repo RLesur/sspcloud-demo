@@ -28,7 +28,7 @@ An R demo project for [datalab.sspcloud.fr](https://datalab.sspcloud.fr).
 
 **Trouver le nom de son _bucket_ personnel**
 
-Chaque utilisateur du SSP Cloud dispose d'un espace personnel de stockage
+Chaque utilisateur du SSP Cloud dispose d'un espace de stockage
 personnel sur le système de stockage du SSP Cloud. Ces espaces de stockage
 s'appellent des _buckets_.
 
