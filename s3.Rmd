@@ -61,7 +61,7 @@ svc <- paws::s3(config = list(
 ```
 
 ```{r}
-svc$list_objects_v2("f7sggu", Prefix = "sspcloud-demo")
+svc$list_objects_v2(bucket, Prefix = "sspcloud-demo")
 ```
 
 ---
