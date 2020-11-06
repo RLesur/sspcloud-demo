@@ -26,13 +26,23 @@ An R demo project for [datalab.sspcloud.fr](https://datalab.sspcloud.fr).
 
 ### Cheatsheet
 
-Télécharger un fichier
+**Trouver le nom de son _bucket_ personnel**
+
+Chaque utilisateur du SSP Cloud dispose d'un espace personnel de stockage
+personnel sur le système de stockage du SSP Cloud. Ces espaces de stockage
+s'appellent des _buckets_.
+
+Pour trouver le nom de son espace personnel de stockage, on peut se rendre sur
+la page <https://datalab.sspcloud.fr/mes-fichiers>. On trouve alors le nom de
+son **bucket personnel**.
+
+**Télécharger un fichier**
 
 ```r
 aws.s3::save_object(object, bucket, region = "")
 ```
 
-Uploader un fichier
+**Uploader un fichier**
 
 ```r
 aws.s3::put_object(file, object, bucket, region = "")
