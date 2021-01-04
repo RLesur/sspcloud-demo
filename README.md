@@ -4,7 +4,7 @@ An R demo project for [datalab.sspcloud.fr](https://datalab.sspcloud.fr).
 
 ## Environment setup
 
-- create an RStudio service [![](https://img.shields.io/badge/SSPCloud-RStudio-%2376abdd)](https://datalab.sspcloud.fr/my-lab/catalogue/inseefrlab-datascience/rstudio/deploiement)
+- create an RStudio service [![](https://img.shields.io/badge/SSPCloud-RStudio-%2376abdd)](https://datalab.sspcloud.fr/my-lab/catalogue/inseefrlab-helm-charts-datascience/rstudio/deploiement)
 
 - log in with the following credentials:
   * user: `rstudio`
